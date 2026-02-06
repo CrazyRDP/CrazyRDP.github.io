@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="theme-color" content="#0060fe"/>
+    <meta name="language" content="en"/>
+    <meta content="https://crazyrdp.sh/fedora-vps" property="og:url"/>
+    <meta content="en_US" property="og:locale"/>
+    <meta content="website" property="og:type"/>
+    <link rel="shortcut icon"  type="image/x-icon"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#0060fe"/>
+    <meta content="Offshore Anonymous Fedora VPS - Starting from €3.50 / month" name="description"/>
+    <meta content="Offshore Anonymous Fedora VPS - Starting from €3.50 / month" property="og:description"/>
+    <meta content="Fedora VPS | Offshore &amp; Anonymous Server" property="og:title"/>
+    <meta content="Fedora VPS | Offshore &amp; Anonymous Server" property="og:site_name"/>
+    <title>Fedora VPS | Offshore & Anonymous Server</title>
+	<link rel="canonical" href="https://crazyrdp.sh/fedora-vps" />
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <script src="script_file.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+    <link href="//fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: "#da373d",
+                },
+            },
+        },
+    };
+    </script>
+    <script src="assets/js/index.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="6c020464-0335-4950-b12c-43e8efc609fc";(function(){d=document;s=d.createElement("script");s.src="l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</head>
+<body> 		<header class="fixed top-0 w-full z-10">
+		    <div class="container mx-auto max-w-[1200px] px-6 lg:px-0">
+		        <div class="flex justify-between items-center py-[18px] md:py-[0px] relative">
+		            <a href="/"><img src="assets/svgs/logo.svg" alt="CrazyRDP"/></a>
+		            <div class="lg:flex justify-between items-center lg:max-w-[575px] w-full lg:static absolute top-full hidden" id="menu">
+		                <ul class="flex justify-between items-center max-w-[555px] w-full flex-col lg:flex-row mt-2 lg:mt-0 p-4 rounded-2xl lg:p-0 lg:bg-transparent bg-[#000]">
+		                    <li class="relative">
+		                        <div class="flex justify-center items-center cursor-pointer hover:text-[#cecfd3] " onclick="dropdownCollapse()">
+		                            <p class="text-l not-italic font-normal leading-[normal] tracking-[-0.165px] ">
+		                                Bare Metal Servers
+		                            </p>
+		                            <img src="assets/svgs/drop-down.svg" class="ml-2 max-w-[10px]" alt="drop-arrow"/>
+		                        </div>
+		                        <div class="w-full py-4 bg-[#00000020] mt-5 lg:hidden hidden" id="desktopCollapse2">
+		                            <ul class="w-fit justify-center gap-8">
+		                                <li>
+		                                    <a href="amd-dedicated-server" class="flex flex-col justify-center items-center hover:text-[#cecfd3]">
+		                                        <img src="assets/img/servers/amd.png" class="w-[50px] aspect-square" alt="AMD Dedicated Server"/>
+		                                        <p class="mt-2 text-[14px]">AMD Dedicated Server</p>
+		                                    </a>
+		                                </li>
+		                            </ul>
+		                        </div>
+		                    </li>
+		                    <li class="py-6">
+		                        <a href="linux-vps-server" class="text-l not-italic font-normal leading-[normal] tracking-[-0.165px] hover:text-[#cecfd3]">
+		                            Linux VPS
+		                            Servers
+		                        </a>
+		                    </li>
+		                    <li>
+		                        <a href="windows-rdp-server" class="text-l not-italic font-normal leading-[normal] tracking-[-0.165px] hover:text-[#cecfd3]">
+		                            Windows RDP
+		                            Servers
+		                        </a>
+		                    </li>
+		                </ul>
+		            </div>
+		            <div class="flex justify-between items-center">
+		                <a href="https://anonvm.wtf" class="md:text-l text-[15px] font-normal tracking-[-0.165px] lg:block hidden hover:text-[#cecfd3]">
+		                    Register </a>
+		                <a href="https://anonvm.wtf" class="md:pl-[15px] md:pr-3.5 md:mt-3.5 md:mb-[13px] px-2.5 py-1.5 ml-6 border md:rounded-[10px] rounded-[5px] text-[#161b22] bg-[#e5e7eb] hover:bg-[#cecfd3] md:text-l text-[15px] font-normal tracking-[-0.165px]">Login</a>
+		                <img src="assets/img/hamburger.png" class="ml-5 lg:hidden block" onclick="toggleMenu()" alt="menu"/>
+		            </div>
+		        </div>
+		        <div class="w-full top-full left-0 py-4 hidden" id="desktopCollapse">
+		            <ul class="w-fit mx-auto flex gap-8">
+		                <li>
+		                    <a href="amd-dedicated-server" class="flex flex-col justify-center items-center hover:text-[#cecfd3]">
+		                        <img src="assets/img/servers/amd.png" class="w-[70px] aspect-square" alt="AMD Dedicated Server"/>
+		                        <p class="mt-2">AMD Dedicated Server</p>
+		                    </a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</header> <main>
+        <section class="md:min-h-[870px] min-h-[511px] h-full bg-[url('assets/img/hero-bg.svg')] md:bg-[length:100%_100%] bg-[length:200%_100%] bg-center bg-no-repeat grid place-items-center">
+            <div class="max-w-[971px] w-full">
+                <h1 class="md:text-[55px] text-[27px] font-black md:leading-[60px] leading-[normal] text-center px-2">
+                    Powerful Anonymous <br>Offshore Fedora VPS </h1>
+                <p class="md:text-xl text-[13px] font-medium md:leading-6 leading-[normal] tracking-[-0.165px] text-center  mx-auto px-4 md:px-0 md:mt-[38px] my-6 md:mb-[50px] w-full">
+                    Our VPS Servers are reliable, fast and can be easily tailored to fit your needs. With a couple of
+                    clicks your new Fedora VPS is all set-up and ready for use, starting from €3.50 / month. </p>
+                <div class="md:max-w-[257px] max-w-[172px] w-full mx-auto">
+                    <a href="#pricing" class="bg-[#0060fe] hover:bg-[#0056e4] rounded-[10px] md:py-4 py-3 md:px-7 px-5 mx-auto flex items-center justify-between">
+                        <p class="md:text-xl text-[13px] font-normal tracking-[-0.48px] leading-[normal]"> Choose your
+                            server </p>
+                        <img src="assets/svgs/drop-down.svg" class=" max-w-[14px]" alt="drop-arrow"/>
+                    </a>
+                </div>
+            </div>
+        </section> 			<section class="max-w-[1200px] w-full mx-auto md:px-auto px-9 lg:mt-[90px] mt-7 mb-[45px]">
+				<div class="flex justify-between items-center flex-wrap gap-5">
+					<img src="assets/img/brands/hp.png" class="md:max-w-[120px] max-w-[100px]" alt="HP Enterprise"/>
+					<img src="assets/img/brands/supermicro.png" class="md:max-w-[120px] max-w-[100px]" alt="Supermicro"/>
+					<img src="assets/img/brands/kvm.png" class="md:max-w-[120px] max-w-[100px]" alt="KVM"/>
+					<img src="assets/img/brands/arista.svg" class="md:max-w-[120px] max-w-[100px]" alt="Arista"/>
+					<img src="assets/img/brands/juniper.svg" class="md:max-w-[120px] max-w-[100px]" alt="Juniper"/>
+					<img src="assets/img/brands/ripe.svg" class="md:max-w-[150px] max-w-[100px]" alt="RIPE"/>
+				</div>
+			</section> <div class="md:px-0 px-8">
+            <section class="w-full bg-[url('./assets/img/shadow.png')] md:bg-[length:100%_100%] bg-[length:100%_100%] bg-center bg-no-repeat grid place-items-center mx-auto md:p-[60px] p-6 mt-[26px]">
+                <div class="max-w-[767px] mx-auto">
+                    <p class="mt-6 mb-3 text-[#A7A7A7] text-center md:text-base text-[13px] font-medium leading-6">
+                        Fedora is an innovative, open-source Linux distribution sponsored by Red Hat. It serves as a
+                        testing ground for new ideas and technologies that might later be incorporated into Red Hat
+                        Enterprise Linux (RHEL). Fedora is known for its cutting-edge features, offering users the
+                        latest advancements in the open-source world, often much earlier than other distributions. </p>
+                    <p class="text-[#A7A7A7] text-center md:text-base text-[13px] font-medium leading-6">
+                        Using Fedora on a VPS offers a modern, forward-leaning environment suitable for those wanting to
+                        experiment with the latest in Linux technologies or develop contemporary applications. It
+                        provides a rich set of software packages, vibrant community support, and frequent updates. While
+                        Fedora may not have the long-term stability of some enterprise distributions, it's perfect for
+                        developers and tech enthusiasts looking for a fresh, dynamic virtual server experience. </p>
+                </div>
+            </section>
+        </div>
+        <br> 			<section id="pricing" class="max-w-[1200px] w-full mx-auto lg:px-0 px-[30px]">
+			    <div class="sm:p-7 p-10 border-[3px] border-[#ffffff05] mb-[17px] sm:rounded-3xl rounded-2xl bg-[#ffffff05] grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 sm:gap-6 grid-cols-1 sm:place-items-center lg:place-items-stretch">
+			        <div>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Intel Xeon E5-2699 v3 @ 2.30/3.60 GHz </p>
+			            <p class="sm:text-[32px] text-[24px] font-bold mt-[9px] sm:mb-3 mb-2"> BUDGET Plan </p>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Location: Amsterdam - The Netherlands </p>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[150px] sm:mt-0 mt-10 mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <img src="assets/svgs/cores.svg" alt="ram-image"/>
+			                    <p class="ml-3 text-base font-normal leading-6">1 vCore</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">2 GB RAM</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 sm:border-0 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">15 GB SSD</p>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[225px] mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 500 Mbps unmetered </p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 IPv4 address </p>
+			                </li>
+			                <li class="text-base font-normal leading-6 py-3"> Extra IPv4's: €2.50 each </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E] sm:mt-0 mt-7">
+			            <div class="w-fit mx-auto">
+			                <p class="text-[40px] font-extrabold tracking-[-0.8px] mb-4 text-center"> €3.50 <span class="text-sm font-normal tracking-[-0.8px] text-[#AEAEAE]"> / month</span>
+			                </p>
+			                <a href="https://anonvm.wtf" class="rounded-[10px] bg-[#015BEF] hover:bg-[#0051d7] flex justify-center items-center py-[9px] max-w-[250px] px-[55px]">
+			                     Order Now </a>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="sm:p-7 p-10 border-[3px] border-[#ffffff05] mb-[17px] sm:rounded-3xl rounded-2xl bg-[#ffffff05] grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 sm:gap-6 grid-cols-1 sm:place-items-center lg:place-items-stretch">
+			        <div>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Intel Xeon E5-2699 v3 @ 2.30/3.60 GHz </p>
+			            <p class="sm:text-[32px] text-[24px] font-bold mt-[9px] sm:mb-3 mb-2"> CRAZY Plan</p>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Location: Amsterdam - The Netherlands </p>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[150px] sm:mt-0 mt-10 mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <img src="assets/svgs/cores.svg" alt="ram-image"/>
+			                    <p class="ml-3 text-base font-normal leading-6">2 vCores</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">6 GB RAM</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 sm:border-0 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">40 GB SSD</p>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[225px] mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 Gbps unmetered </p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 IPv4 address </p>
+			                </li>
+			                <li class="text-base font-normal leading-6 py-3"> Extra IPv4's: €2.50 each </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E] sm:mt-0 mt-7">
+			            <div class="w-fit mx-auto">
+			                <p class="text-[40px] font-extrabold tracking-[-0.8px] mb-4 text-center"> €12.50 <span class="text-sm font-normal tracking-[-0.8px] text-[#AEAEAE]"> / month</span>
+			                </p>
+			                <a href="https://anonvm.wtf" class="rounded-[10px] bg-[#015BEF] hover:bg-[#0051d7] flex justify-center items-center py-[9px] max-w-[250px] px-[55px]">
+			                     Order Now </a>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="sm:p-7 p-10 border-[3px] border-[#ffffff05] mb-[17px] sm:rounded-3xl rounded-2xl bg-[#ffffff05] grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 sm:gap-6 grid-cols-1 sm:place-items-center lg:place-items-stretch">
+			        <div>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Intel Xeon E5-2699 v3 @ 2.30/3.60 GHz </p>
+			            <p class="sm:text-[32px] text-[24px] font-bold mt-[9px] sm:mb-3 mb-2"> PSYCHO Plan </p>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Location: Amsterdam - The Netherlands </p>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[150px] sm:mt-0 mt-10 mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <img src="assets/svgs/cores.svg" alt="ram-image"/>
+			                    <p class="ml-3 text-base font-normal leading-6">4 vCores</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">12 GB RAM</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 sm:border-0 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">70 GB SSD</p>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[225px] mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 Gbps unmetered </p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 IPv4 address </p>
+			                </li>
+			                <li class="text-base font-normal leading-6 py-3"> Extra IPv4's: €2.50 each </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E] sm:mt-0 mt-7">
+			            <div class="w-fit mx-auto">
+			                <p class="text-[40px] font-extrabold tracking-[-0.8px] mb-4 text-center"> €23.50 <span class="text-sm font-normal tracking-[-0.8px] text-[#AEAEAE]"> / month</span>
+			                </p>
+			                <a href="https://anonvm.wtf" class="rounded-[10px] bg-[#015BEF] hover:bg-[#0051d7] flex justify-center items-center py-[9px] max-w-[250px] px-[55px]">
+			                     Order Now </a>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="sm:p-7 p-10 border-[3px] border-[#ffffff05] mb-[17px] sm:rounded-3xl rounded-2xl bg-[#ffffff05] grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 sm:gap-6 grid-cols-1 sm:place-items-center lg:place-items-stretch">
+			        <div>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Intel Xeon E5-2699 v3 @ 2.30/3.60 GHz </p>
+			            <p class="sm:text-[32px] text-[24px] font-bold mt-[9px] sm:mb-3 mb-2"> MANIAC Plan </p>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Location: Amsterdam - The Netherlands </p>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[150px] sm:mt-0 mt-10 mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <img src="assets/svgs/cores.svg" alt="ram-image"/>
+			                    <p class="ml-3 text-base font-normal leading-6">6 vCores</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">20 GB RAM</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 sm:border-0 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">90 GB SSD</p>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[225px] mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 Gbps unmetered </p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 IPv4 address </p>
+			                </li>
+			                <li class="text-base font-normal leading-6 py-3"> Extra IPv4's: €2.50 each </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E] sm:mt-0 mt-7">
+			            <div class="w-fit mx-auto">
+			                <p class="text-[40px] font-extrabold tracking-[-0.8px] mb-4 text-center"> €40 <span class="text-sm font-normal tracking-[-0.8px] text-[#AEAEAE]"> / month</span>
+			                </p>
+			                <a href="https://anonvm.wtf" class="rounded-[10px] bg-[#015BEF] hover:bg-[#0051d7] flex justify-center items-center py-[9px] max-w-[250px] px-[55px]">
+			                     Order Now </a>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="sm:p-7 p-10 border-[3px] border-[#ffffff05] mb-[17px] sm:rounded-3xl rounded-2xl bg-[#ffffff05] grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 sm:gap-6 grid-cols-1 sm:place-items-center lg:place-items-stretch">
+			        <div>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Intel Xeon E5-2680 v4 @ 2.40/3.30 GHz </p>
+			            <p class="sm:text-[32px] text-[24px] font-bold mt-[9px] sm:mb-3 mb-2"> KILLER Plan </p>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Location: Amsterdam - The Netherlands </p>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[150px] sm:mt-0 mt-10 mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <img src="assets/svgs/cores.svg" alt="ram-image"/>
+			                    <p class="ml-3 text-base font-normal leading-6">12 vCores</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">32 GB RAM</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 sm:border-0 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">100 GB SSD</p>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[225px] mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 Gbps unmetered </p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 IPv4 address </p>
+			                </li>
+			                <li class="text-base font-normal leading-6 py-3"> Extra IPv4's: €2.50 each </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E] sm:mt-0 mt-7">
+			            <div class="w-fit mx-auto">
+			                <p class="text-[40px] font-extrabold tracking-[-0.8px] mb-4 text-center"> €68.50 <span class="text-sm font-normal tracking-[-0.8px] text-[#AEAEAE]"> / month</span>
+			                </p>
+			                <a href="https://anonvm.wtf" class="rounded-[10px] bg-[#015BEF] hover:bg-[#0051d7] flex justify-center items-center py-[9px] max-w-[250px] px-[55px]">
+			                     Order Now </a>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="sm:p-7 p-10 border-[3px] border-[#ffffff05] mb-[17px] sm:rounded-3xl rounded-2xl bg-[#ffffff05] grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 sm:gap-6 grid-cols-1 sm:place-items-center lg:place-items-stretch">
+			        <div>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Intel Xeon E5-2699 v3 @ 2.30/3.60 GHz </p>
+			            <p class="sm:text-[32px] text-[24px] font-bold mt-[9px] sm:mb-3 mb-2"> STORAGE Plan </p>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Location: Amsterdam - The Netherlands </p>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[150px] sm:mt-0 mt-10 mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <img src="assets/svgs/cores.svg" alt="ram-image"/>
+			                    <p class="ml-3 text-base font-normal leading-6">16 vCores</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">32 GB RAM</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 sm:border-0 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">1 TB SSD</p>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[225px] mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 Gbps unmetered </p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 IPv4 address </p>
+			                </li>
+			                <li class="text-base font-normal leading-6 py-3"> Extra IPv4's: €2.50 each </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E] sm:mt-0 mt-7">
+			            <div class="w-fit mx-auto">
+			                <p class="text-[40px] font-extrabold tracking-[-0.8px] mb-4 text-center"> €78.50 <span class="text-sm font-normal tracking-[-0.8px] text-[#AEAEAE]"> / month</span>
+			                </p>
+			                <a href="billing-sub/index_rp-_store_vps-netherlands_storage" class="rounded-[10px] bg-[#015BEF] hover:bg-[#0051d7] flex justify-center items-center py-[9px] max-w-[250px] px-[55px]">
+			                     Order Now </a>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="sm:p-7 p-10 border-[3px] border-[#ffffff05] mb-[17px] sm:rounded-3xl rounded-2xl bg-[#ffffff05] grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 sm:gap-6 grid-cols-1 sm:place-items-center lg:place-items-stretch">
+			        <div>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> AMD Opteron 6174 @ 2.20/3.20 GHz<br>or AMD
+			                EPYC 7551 @ 2.00/3.00 GHz</p>
+			            <p class="sm:text-[32px] text-[24px] font-bold mt-[9px] sm:mb-3 mb-2"> EPYC Plan </p>
+			            <p class="text-[#A7A7A7] text-[13px] font-normal leading-6"> Location: Amsterdam - The Netherlands </p>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[150px] sm:mt-0 mt-10 mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <img src="assets/svgs/cores.svg" alt="ram-image"/>
+			                    <p class="ml-3 text-base font-normal leading-6">24 vCores</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">128 GB RAM</p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 sm:border-0 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6">200 GB SSD</p>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E]">
+			            <ul class="sm:max-w-[225px] mx-auto">
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 Gbps unmetered </p>
+			                </li>
+			                <li class="flex justify-start items-center py-2.5 border-b border-[#1E1E1E]">
+			                    <p class="ml-3 text-base font-normal leading-6"> 1 IPv4 address </p>
+			                </li>
+			                <li class="text-base font-normal leading-6 py-3"> Extra IPv4's: €2.50 each </li>
+			            </ul>
+			        </div>
+			        <div class="lg:border-l border-[#1E1E1E] sm:mt-0 mt-7">
+			            <div class="w-fit mx-auto">
+			                <p class="text-[40px] font-extrabold tracking-[-0.8px] mb-4 text-center"> €125 <span class="text-sm font-normal tracking-[-0.8px] text-[#AEAEAE]"> / month</span>
+			                </p>
+			                <a href="https://anonvm.wtf" class="rounded-[10px] bg-[#015BEF] hover:bg-[#0051d7] flex justify-center items-center py-[9px] max-w-[250px] px-[55px]">
+			                     Order Now </a>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+			<section class="max-w-[1200px] w-full mx-auto sm:border-[3px] border-[#ffffff05] rounded-[30px] sm:bg-[#ffffff05] py-5 my-[37px]">
+			    <div class="flex justify-between md:px-[55px] px-8 flex-wrap gap-4">
+			        <div class="flex items-center justify-center sm:w-auto w-full sm:py-0 py-4 lg:border-0 border-[3px] border-[#ffffff05] rounded-2xl bg-[#ffffff05] sm:bg-transparent">
+			            <p class="md:text-base text-[13px] font-medium leading-6 ml-3"> Instant deployment </p>
+			        </div>
+			        <div class="flex items-center justify-center sm:w-auto w-full sm:py-0 py-4 lg:border-0 border-[3px] border-[#ffffff05] rounded-2xl bg-[#ffffff05] sm:bg-transparent">
+			            <p class="md:text-base text-[13px] font-medium leading-6 ml-3"> Easy control panel </p>
+			        </div>
+			        <div class="flex items-center justify-center sm:w-auto w-full sm:py-0 py-4 lg:border-0 border-[3px] border-[#ffffff05] rounded-2xl bg-[#ffffff05] sm:bg-transparent">
+			            <p class="md:text-base text-[13px] font-medium leading-6 ml-3"> Full admin/root user </p>
+			        </div>
+			        <div class="flex items-center justify-center sm:w-auto w-full sm:py-0 py-4 lg:border-0 border-[3px] border-[#ffffff05] rounded-2xl bg-[#ffffff05] sm:bg-transparent">
+			            <p class="md:text-base text-[13px] font-medium leading-6 ml-3"> Anonymous payment </p>
+			        </div>
+			        <div class="flex items-center justify-center sm:w-auto w-full sm:py-0 py-4 lg:border-0 border-[3px] border-[#ffffff05] rounded-2xl bg-[#ffffff05] sm:bg-transparent">
+			            <p class="md:text-base text-[13px] font-medium leading-6 ml-3"> No data logs </p>
+			        </div>
+			    </div>
+			</section>         <div class="md:px-0 px-8">
+            <section class="max-w-[1200px] w-full mt-[33px] mx-auto md:bg-[url('./assets/img/installtion-back.png')] bg-[url('./assets/img/sm-installtion-back.png')] bg-[length:100%_auto] bg-bottom bg-[#D9D9D904] rounded-3xl md:px-[70px] md:py-[79px] px-[30px] py-12 bg-no-repeat md:min-h-[453px] min-h-[890px] h-full">
+                <div class="max-w-[600px] w-full">
+                    <p class="uppercase text-[#0060FE] font-bold leading-[normal];"> INTEGRATED OS LIBRARY FOR YOUR
+                        SERVERs </p>
+                    <p class="md:my-8 my-5 text-white md:text-[40px] text-[27px] font-bold leading-[normal]"> 1-Click OS
+                        Installations </p>
+                    <p class="mb-[17px] text-[#A7A7A7] md:text-base text-[13px] font-medium leading-6"> Modify or
+                        reinstall your server's operating system at your convenience, as often as needed, with no extra
+                        charges. </p>
+                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-medium leading-6"> Choose from a variety of
+                        pre-installed environments. Whether it's an OpenVPN or a LAMP server, you have the freedom to
+                        select the best fit for your project. We arrange the automation of your setup so you can simply
+                        focus on your work. </p>
+                </div>
+            </section>
+        </div> <div class="px-8 md:px-0">
+            <section class="max-w-[1200px] w-full mx-auto pt-[90px]">
+                <div class="flex xl:justify-between justify-center flex-wrap">
+                    <div>
+                        <h4 class="text-[40px] font-bold xl:text-left text-center leading-[normal] max-w-[385px] mt-[22px] mb-[52px]">
+                            Frequently Asked Questions </h4>
+                        <img src="assets/svgs/faq.svg" class="xl:mx-0 mx-auto" alt="faq"/>
+                    </div>
+                    <div class="max-w-[725px] w-full xl:mt-0 mt-10">
+                        <ol class="relative">
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(0 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> What discounts
+                                            do you offer? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        We offer the following discounts:<br>
+                                        - Prepayment for 3 months — 3% off total<br>
+                                        - Prepayment for 6 months — 6% off total<br>
+                                        - Prepayment for 12 months — 12% off total
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(1 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> How do I ensure
+                                            the security of my VPS? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        Security is paramount when using Fedora. Keep your VPS updated with the
+                                        latest security patches, use strong passwords, and limit access to only trusted
+                                        individuals. Also change the default SSH port from 22 to something else to make
+                                        it harder for bruteforcers.</p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(2 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> How long does it
+                                            take to deploy a VPS? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        Once your payment is completed and confirmed on the blockchain (if you've chosen
+                                        cryptocurrency as your payment method), the activation process will take less
+                                        than 1 minute. However, please note that the OS installation itself can take
+                                        between 2 to 5 minutes. It's advisable to wait approximately 5 minutes before
+                                        attempting to connect to your server after activation. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(3 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> How can I manage
+                                            my VPS? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        You can manage your server using our
+                                        user-friendly control panel. Additionally, if you are unable to access your
+                                        server via SSH
+                                        or RDP, you can consider using the VNC option in the control panel for
+                                        remote access to
+                                        rescue your server. The web-based control panel offers a range of features,
+                                        including OS
+                                        reinstallation, changing primary IP addresses for multiple servers and
+                                        additional server administration features like resource
+                                        monitoring,
+                                        firewall configuration, and much more. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(4 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> Will there be
+                                            any additional charges for (heavy) traffic? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        No, there won't be additional charges for heavy traffic. However, engaging in
+                                        activities like DDoS attacks, overloading our network, or spoofing is
+                                        prohibited. If such activities are detected, we will suspend the server in
+                                        question. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(5 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> Is the IPv4
+                                            address attached to my VPS shared with others? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        No, the IPv4 address assigned to your VPS is dedicated solely to your
+                                        server and is not shared with others. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(6 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> Can I order
+                                            multiple IPv4's or subnets? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        Yes, you can order additional IP addresses for your VPS during the
+                                        standard order process on our website. Each additional IP is priced at 2.50 EUR.
+                                        If you require more than 60 IP addresses, we can offer /24 subnets with 253
+                                        usable IPv4's for €200 monthly. Please contact us through the support ticket for
+                                        further assistance.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(7 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> What payment
+                                            methods are available? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        We accept payments in Perfect Money, as well as a wide range of
+                                        cryptocurrencies: Monero
+                                        (XMR), Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), USD Coin (USDC),
+                                        Tether (USDT),
+                                        Binance USD (BUSD), Dai (DAI), Bitcoin Cash (BCH), Binance Coin (BNB), Dash
+                                        (DASH),
+                                        Dogecoin (DOGE), Polygon (MATIC), Toncoin (TON), Tron (TRX), and many other
+                                        coins. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(8 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> Are any ports
+                                            blocked by default? For example port 25, 465 or 587? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        Yes. We have disabled SMTP ports 25, 465 and 587 because of low quality spam.
+                                        <br>We
+                                        can not open these ports for you either.
+                                    </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+        			<div class="px-8 md:px-0">
+			    <section class="max-w-[1200px] w-full mx-auto lg:mt-[90px] mt-6 md:mb-[120px] mb-[60px] bg-[url('./assets/img/get-start-back.png')] bg-[length:100%_100%] bg-no-repeat md:px-[85px] md:py-[40px] py-6">
+			        <div class="flex justify-between items-center">
+			            <p class="md:text-[40px] text-[20px] font-bold leading-[normal] lg:w-fit w-full lg:text-left text-center">
+			                Ready to get started? </p>
+			            <a href="https://anonvm.wtf" class="lg:flex justify-between py-7 px-10 bg-white rounded-2xl">
+			                <p class="text-[#015BEF] text-2xl font-medium leading-[normal]"> Create your account </p>
+			                <div class="flex items-center ml-2">
+			                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewbox="0 0 14 2" fill="none">
+			                        <path d="M1 1H13" stroke="#015BEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			                    </svg>
+			                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" class="-ml-1" viewbox="0 0 7 14" fill="none">
+			                        <path d="M1 1L6 6.99999L1 13" stroke="#015BEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			                    </svg>
+			                </div>
+			            </a>
+			        </div>
+			    </section>
+			</div>
+			</main>
+			<footer class="bg-[#ffffff05]">
+			    <div class="container mx-auto md:flex grid grid-cols-2 justify-between flex-wrap gap-7 md:px-0 px-14 md:py-[90px] py-10">
+			        <div class="h-fit">
+			            <div>
+			                <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Bare Metal </p>
+			                <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="amd-dedicated-server">AMD Dedicated Server</a>
+			                    </li>
+			                </ul>
+			            </div>
+			            <div class="h-fit mt-7 md:hidden block">
+			                <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Windows Cloud </p>
+			                <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="windows-2022-rdp">Windows Server 2022 RDP</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="windows-2019-rdp">Windows Server 2019 RDP</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="windows-2012-rdp">Windows Server 2012 RDP</a>
+			                    </li>
+			                </ul>
+			            </div>
+			        </div>
+			        <div class="h-fit">
+			            <div>
+			                <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Linux Cloud </p>
+			                <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="kali-linux-vps">Kali Linux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="debian-vps">Debian VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="ubuntu-vps">Ubuntu VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="centos-vps">CentOS VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="almalinux-vps">AlmaLinux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="oracle-linux-vps">Oracle Linux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="rocky-linux-vps">Rocky Linux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="fedora-vps">Fedora VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="scientific-linux-vps">Scientific Linux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="opensuse-vps">openSUSE VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="webuzo-vps">Webuzo VPS</a>
+			                    </li>
+			                </ul>
+			            </div>
+			            <div class="mt-7 md:hidden block">
+			                <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Resources </p>
+			                <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#x">Server Uptime</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Contact Us</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Acceptable Use Policy</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Terms of Service</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Privacy Policy</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Refund Policy</a>
+			                    </li>
+			                </ul>
+			            </div>
+			        </div>
+			        <div class="md:block hidden">
+			            <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Windows Cloud </p>
+			            <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                <li class="md:text-base text-[13px]">
+			                    <a href="windows-2022-rdp">Windows Server 2022 RDP</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="windows-2019-rdp">Windows Server 2019 RDP</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="windows-2012-rdp">Windows Server 2012 RDP</a>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="md:block hidden">
+			            <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Resources </p>
+			            <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#x">Server Uptime</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Contact Us</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Acceptable Use Policy</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Terms of Service</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Privacy Policy</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Refund Policy</a>
+			                </li>
+			            </ul>
+			        </div>
+			    </div>
+			    <div class="bg-[#ffffff05] py-4">
+			        <p class="text-center text-[#A7A7A7] md:text-[14.883px] text-[13px] font-normal leading-[21px] tracking-[-0.15px]">
+			            Copyright &copy; <a href="/" class="text-[white]"> CrazyRDP</a> 2019 - 2024 <br/> All
+			            rights reserved </p>
+			    </div>
+			</footer><script defer src="beacon.min.js" data-cf-beacon="{&quot;rayId&quot;:&quot;8794f2b12f2387ac&quot;,&quot;version&quot;:&quot;2024.4.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;cec06facb92c46cbab872dc935538963&quot;,&quot;b&quot;:1}" ></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: NeueMachina;
+  src: url(https://crazyrdp.sh/assets/assets/fonts/NeueMachina.otf);
+}
+
+* {
+  box-sizing: border-box;
+  /* font-family: NeueMachina; */
+  /* font-family: inter; */
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #161b22;
+  color: white;
+}
+
+header {
+  background-color: linear-gradient(
+    105deg,
+    rgba(217, 217, 217, 0.09) -158%,
+    rgba(217, 217, 217, 0.02) -55.77%
+  );
+  backdrop-filter: blur(125px);
+}
+
+.nav-items {
+  @apply text-red-500;
+}
+
+.checkbox {
+  visibility: hidden;
+}
+
+.checkbox::after {
+  content: "";
+  background: #111111;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  visibility: visible;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  left: 0;
+}
+
+.checkbox:checked:after {
+  background-image: url("https://crazyrdp.sh/assets/assets/svgs/checked.svg");
+  background-position: center;
+}

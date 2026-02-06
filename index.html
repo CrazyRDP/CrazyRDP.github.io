@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="theme-color" content="#0060fe"/>
+    <meta name="language" content="en"/>
+    <meta content="https://crazyrdp.sh/" property="og:url"/>
+    <meta content="en_US" property="og:locale"/>
+    <meta content="website" property="og:type"/>
+    <link rel="shortcut icon"  type="image/x-icon"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#0060fe"/>
+    <meta content="Where performance meets privacy — built for users who want speed, security, and uncompromised anonymity." name="description"/>
+    <meta content="Where performance meets privacy — built for users who want speed, security, and uncompromised anonymity." property="og:description"/>
+    <meta content="Offshore, Anonymous &amp; Fast Server Hosting | CrazyRDP" property="og:title"/>
+    <meta content="Offshore, Anonymous &amp; Fast Server Hosting | CrazyRDP" property="og:site_name"/>
+    <title>Offshore, Anonymous & Fast Server Hosting | CrazyRDP</title>
+	<link rel="canonical" href="https://crazyrdp.sh" />
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <script src="script_file.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+    <link href="//fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://crazyrdp.sh/#organization",
+      "name": "CrazyRDP",
+      "url": "https://crazyrdp.sh/",
+      "logo": "https://crazyrdp.sh/assets/img/logo.png",
+      "description": "Offshore and anonymous server hosting provider offering fast RDP, VPS and dedicated servers.",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "availableLanguage": ["English"]
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://crazyrdp.sh/#hosting",
+      "name": "Offshore Anonymous Server Hosting",
+      "description": "High performance offshore hosting with anonymous signup. Fast RDP, VPS and dedicated servers with strong privacy.",
+      "brand": {
+        "@type": "Brand",
+        "name": "CrazyRDP"
+      },
+      "provider": {
+        "@id": "https://crazyrdp.sh/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://crazyrdp.sh/",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "category": "Web Hosting"
+    }
+  ]
+}
+</script>
+
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: "#da373d",
+                },
+            },
+        },
+    };
+    </script>
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+    		<header class="fixed top-0 w-full z-10">
+		    <div class="container mx-auto max-w-[1200px] px-6 lg:px-0">
+		        <div class="flex justify-between items-center py-[18px] md:py-[0px] relative">
+		            <a href="/"><img src="assets/svgs/logo.svg" alt="CrazyRDP"/></a>
+		            <div class="lg:flex justify-between items-center lg:max-w-[575px] w-full lg:static absolute top-full hidden" id="menu">
+		                <ul class="flex justify-between items-center max-w-[555px] w-full flex-col lg:flex-row mt-2 lg:mt-0 p-4 rounded-2xl lg:p-0 lg:bg-transparent bg-[#000]">
+		                    <li class="relative">
+		                        <div class="flex justify-center items-center cursor-pointer hover:text-[#cecfd3] " onclick="dropdownCollapse()">
+		                            <p class="text-l not-italic font-normal leading-[normal] tracking-[-0.165px] ">
+		                                Bare Metal Servers
+		                            </p>
+		                            <img src="assets/svgs/drop-down.svg" class="ml-2 max-w-[10px]" alt="drop-arrow"/>
+		                        </div>
+		                        <div class="w-full py-4 bg-[#00000020] mt-5 lg:hidden hidden" id="desktopCollapse2">
+		                            <ul class="w-fit justify-center gap-8">
+		                                <li>
+		                                    <a href="amd-dedicated-server" class="flex flex-col justify-center items-center hover:text-[#cecfd3]">
+		                                        <img src="assets/img/servers/amd.png" class="w-[50px] aspect-square" alt="AMD Dedicated Server"/>
+		                                        <p class="mt-2 text-[14px]">AMD Dedicated Server</p>
+		                                    </a>
+		                                </li>
+		                            </ul>
+		                        </div>
+		                    </li>
+		                    <li class="py-6">
+		                        <a href="linux-vps-server" class="text-l not-italic font-normal leading-[normal] tracking-[-0.165px] hover:text-[#cecfd3]">
+		                            Linux VPS
+		                            Servers
+		                        </a>
+		                    </li>
+		                    <li>
+		                        <a href="windows-rdp-server" class="text-l not-italic font-normal leading-[normal] tracking-[-0.165px] hover:text-[#cecfd3]">
+		                            Windows RDP
+		                            Servers
+		                        </a>
+		                    </li>
+		                </ul>
+		            </div>
+		            <div class="flex justify-between items-center">
+		                <a href="https://anonvm.wtf" class="md:text-l text-[15px] font-normal tracking-[-0.165px] lg:block hidden hover:text-[#cecfd3]">
+		                    Register </a>
+		                <a href="https://anonvm.wtf" class="md:pl-[15px] md:pr-3.5 md:mt-3.5 md:mb-[13px] px-2.5 py-1.5 ml-6 border md:rounded-[10px] rounded-[5px] text-[#161b22] bg-[#e5e7eb] hover:bg-[#cecfd3] md:text-l text-[15px] font-normal tracking-[-0.165px]">Login</a>
+		                <img src="assets/img/hamburger.png" class="ml-5 lg:hidden block" onclick="toggleMenu()" alt="menu"/>
+		            </div>
+		        </div>
+		        <div class="w-full top-full left-0 py-4 hidden" id="desktopCollapse">
+		            <ul class="w-fit mx-auto flex gap-8">
+		                <li>
+		                    <a href="amd-dedicated-server" class="flex flex-col justify-center items-center hover:text-[#cecfd3]">
+		                        <img src="assets/img/servers/amd.png" class="w-[70px] aspect-square" alt="AMD Dedicated Server"/>
+		                        <p class="mt-2">AMD Dedicated Server</p>
+		                    </a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</header>    <main>
+        <section class="md:min-h-[870px] min-h-[511px] h-full bg-[url('assets/img/hero-bg.svg')] md:bg-[length:100%_100%] bg-[length:200%_100%] bg-center bg-no-repeat grid place-items-center">
+            <div class="max-w-[971px] w-full">
+                <h1 class="md:text-[55px] text-[27px] font-black md:leading-[60px] leading-[normal] text-center px-2">
+                    Experience the Strength of Anonymous Offshore Hosting </h1>
+                <p class="md:text-xl text-[13px] font-medium md:leading-6 leading-[normal] tracking-[-0.165px] text-center  mx-auto px-4 md:px-0 md:mt-[38px] my-6 md:mb-[50px] w-full">
+                    Discover the freedom of being incognito while enjoying top-notch security. Our advanced VPS,
+                    RDP and Dedicated Server Hosting solutions ensure your data remains private, shielded from prying
+                    eyes. </p>
+            </div>
+        </section>
+        			<section class="max-w-[1200px] w-full mx-auto md:px-auto px-9 lg:mt-[90px] mt-7 mb-[45px]">
+				<div class="flex justify-between items-center flex-wrap gap-5">
+					<img src="assets/img/brands/hp.png" class="md:max-w-[120px] max-w-[100px]" alt="HP Enterprise"/>
+					<img src="assets/img/brands/supermicro.png" class="md:max-w-[120px] max-w-[100px]" alt="Supermicro"/>
+					<img src="assets/img/brands/kvm.png" class="md:max-w-[120px] max-w-[100px]" alt="KVM"/>
+					<img src="assets/img/brands/arista.svg" class="md:max-w-[120px] max-w-[100px]" alt="Arista"/>
+					<img src="assets/img/brands/juniper.svg" class="md:max-w-[120px] max-w-[100px]" alt="Juniper"/>
+					<img src="assets/img/brands/ripe.svg" class="md:max-w-[150px] max-w-[100px]" alt="RIPE"/>
+				</div>
+			</section>                <section class="max-w-[1200px] w-full mx-auto relative md:mt-[76px] mt-[30px] mb-[36px] md:px-0 px-8">
+            <div class="bg-[url('./assets/img/shield-back.png')] md:max-h-[275px] md:min-h-[275px] max-h-[161px] min-h-[161px] bg-center bg-no-repeat bg-[length:100%_100%] md:p-12 p-7">
+                <h3 class="lg:text-[56px] text-[24px] max-w-[142px] sm:max-w-max my-auto font-bold leading-[107.7%]">
+                    Work safe and anonymous </h3>
+                <div class="mt-7 bg-[#FFFFFF4D] backdrop-blur-[54px] xl:flex justify-between px-6 py-4 w-fit rounded-full hidden" style="filter: drop-shadow(0px 5px 19px rgba(0, 0, 0, 0.12))">
+                    <div class="flex items-center">
+                        <img src="assets/svgs/right-white.svg" alt="right"/>
+                        <p class="text-2xl font-medium leading-[107.7%] ml-2">No KYC</p>
+                    </div>
+                    <div class="flex items-center mx-6">
+                        <img src="assets/svgs/right-white.svg" alt="right"/>
+                        <p class="text-2xl font-medium leading-[107.7%] ml-2"> No data logging </p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/svgs/right-white.svg" alt="right"/>
+                        <p class="text-2xl font-medium leading-[107.7%] ml-2"> Instant deployment </p>
+                    </div>
+                </div>
+                <img src="assets/img/shield.png" class="absolute bottom-0 -md:right-12 right-0 md:w-auto w-[230px]" alt="shield"/>
+            </div>
+        </section>
+        <!-- main feature section -->
+        <section class="max-w-[1200px] w-full mx-auto md:px-0 px-8">
+            <div class="grid lg:grid-cols-2 grid-cols-1 sm:gap-8 gap-5">
+                <div class="lg:min-h-[284px] sm:min-h-[384px] bg-[url('./assets/img/feature-back1.png')] bg-[length:100%_100%] bg-no-repeat rounded-3xl p-6">
+                    <div class="w-fit p-1.5 border-2 border-[#d9d9d905] rounded-xl bg-[#d9d9d906]">
+                        <img src="assets/svgs/cube.svg" alt="cube"/>
+                    </div>
+                    <p class="sm:mt-10 mt-7 sm:text-4xl text-[20px] font-bold leading-[normal] md:max-w-[328px] max-w-[170px]">
+                        Instant server deployment </p>
+                </div>
+                <div class="lg:min-h-[284px] sm:min-h-[384px] bg-[url('./assets/img/feature-back2.png')] bg-[length:100%_100%] bg-no-repeat rounded-3xl p-6">
+                    <div class="w-fit p-1.5 border-2 border-[#d9d9d905] rounded-xl bg-[#d9d9d906]">
+                        <img src="assets/svgs/cores.svg" alt="cores"/>
+                    </div>
+                    <p class="sm:mt-10 mt-7 sm:text-4xl text-[20px] font-bold leading-[normal] md:max-w-[410px] max-w-[222px]">
+                        Real unmetered<br>bandwidth </p>
+                </div>
+                <div class="lg:min-h-[284px] sm:min-h-[384px] bg-[url('./assets/img/feature-back3.png')] bg-[length:100%_100%] bg-no-repeat rounded-3xl p-6">
+                    <div class="w-fit p-1.5 border-2 border-[#d9d9d905] rounded-xl bg-[#d9d9d906]">
+                        <img src="assets/svgs/bitcoin.svg" alt="bitcoin"/>
+                    </div>
+                    <p class="sm:mt-10 mt-7 sm:text-4xl text-[20px] font-bold leading-[normal] md:max-w-[328px] max-w-[240px]">
+                        Pay with any cryptocurrency</p>
+                </div>
+                <div class="lg:min-h-[284px] sm:min-h-[384px] bg-[url('./assets/img/feature-back4.png')] bg-[length:100%_100%] bg-no-repeat rounded-3xl p-6">
+                    <div class="w-fit p-1.5 border-2 border-[#d9d9d905] rounded-xl bg-[#d9d9d906]">
+                        <img src="assets/svgs/head-phone.svg" alt="phone"/>
+                    </div>
+                    <p class="sm:mt-10 mt-7 sm:text-4xl text-[20px] font-bold leading-[normal] md:max-w-[328px] max-w-[153px]">
+                        Daily support<br>8 AM till 10 PM UTC</p>
+                </div>
+            </div>
+        </section>                <div class="md:px-0 px-8">
+            <section class="max-w-[1200px] w-full mt-[33px] mx-auto md:bg-[url('./assets/img/installtion-back.png')] bg-[url('./assets/img/sm-installtion-back.png')] bg-[length:100%_auto] bg-bottom bg-[#D9D9D904] rounded-3xl md:px-[70px] md:py-[79px] px-[30px] py-12 bg-no-repeat md:min-h-[453px] min-h-[890px] h-full">
+                <div class="max-w-[600px] w-full">
+                    <p class="uppercase text-[#0060FE] font-bold leading-[normal];"> INTEGRATED OS LIBRARY FOR YOUR
+                        SERVERs </p>
+                    <p class="md:my-8 my-5 text-white md:text-[40px] text-[27px] font-bold leading-[normal]"> 1-Click OS
+                        Installations </p>
+                    <p class="mb-[17px] text-[#A7A7A7] md:text-base text-[13px] font-medium leading-6"> Modify or
+                        reinstall your server's operating system at your convenience, as often as needed, with no extra
+                        charges. </p>
+                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-medium leading-6"> Choose from a variety of
+                        pre-installed environments. Whether it's an OpenVPN or a LAMP server, you have the freedom to
+                        select the best fit for your project. We arrange the automation of your setup so you can simply
+                        focus on your work. </p>
+                </div>
+            </section>
+        </div>                <!-- server list -->
+        <div class="px-8 md:px-0">
+            <section class="max-w-[1200px] w-full mx-auto mt-6 md:p-[90px] p-[60px] border-[3px] border-[#ffffff05] rounded-3xl bg-[#ffffff05]">
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-7">
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(0, 120, 212, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/windows-11.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> Windows </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/windows-11.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Windows Server 2012 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/windows-11.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Windows Server 2019 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/windows-11.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Windows Server 2022 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(215, 7, 81, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/debian.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> Debian </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/debian.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Debian 8.7 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/debian.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Debian 9.4 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/debian.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Debian 10 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/debian.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Debian 11 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/debian.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Debian 12 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(255, 87, 34, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/ubuntu.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> Ubuntu </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/ubuntu.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Ubuntu 18.04 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/ubuntu.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Ubuntu 20.04 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/ubuntu.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Ubuntu 22.04 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(36, 153, 255, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/kali-linux.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> Kali Linux </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/kali-linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Kali Linux 2023.3 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(147, 34, 121, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/kai-linux.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> CentOS </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/kai-linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> CentOS 6.10 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/kai-linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> CentOS 7.8 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/kai-linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> CentOS 8 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/kai-linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> CentOS 8.7 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(227, 22, 21, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/oracle.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> Oracle Linux </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/oracle.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Oracle Linux 8.6 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/oracle.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Oracle Linux 8.8 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/oracle.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Oracle Linux 9.2 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(16, 185, 131, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/rocky.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> Rocky Linux </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/rocky.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Rocky Linux 8.4 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/rocky.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Rocky Linux 8.8 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/rocky.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Rocky Linux 9.1 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/rocky.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Rocky Linux 9.2 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(36, 194, 255, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/linux.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> AlmaLinux </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> AlmaLinux 8.6 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> AlmaLinux 8.8 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> AlmaLinux 9.0 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center mb-2">
+                                <img src="assets/img/server/linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> AlmaLinux 9.1 </p>
+                            </div>
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/linux.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> AlmaLinux 9.2 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(13, 13, 169, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/scientific.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-[20px] font-medium leading-[normal] text-center"> Scientific Linux
+                            </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/scientific.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Scientific Linux 7.4 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(115, 186, 37, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/suse.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> openSUSE </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/suse.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> openSUSE 15.1 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(41, 65, 114, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/fedora.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> Fedora </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/fedora.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Fedora 34 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-8 backdrop-blur-[125px] rounded-3xl border-2 border-[#ffffff05]" style="
+                  background-image: linear-gradient(
+                    180deg,
+                    rgba(128, 24, 20, 0.09),
+                    rgba(223, 223, 223, 0.02)
+                  );
+                ">
+                            <img src="assets/img/server/webuzo.png" class="mx-auto" alt="linux"/>
+                            <p class="mt-[35px] text-2xl font-medium leading-[normal] text-center"> Webuzo </p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="bg-[#ffffff05] py-4 px-4 rounded-2xl flex items-center justify-center">
+                                <img src="assets/img/server/webuzo.png" class="w-[22px] h-[22px]" alt="linux"/>
+                                <p class="ml-3 text-sm font-normal leading-[normal]"> Webuzo 8.6 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>        <div class="px-8 md:px-0">
+            <section class="max-w-[1200px] w-full mx-auto pt-[90px]">
+                <div class="flex xl:justify-between justify-center flex-wrap">
+                    <div>
+                        <h4 class="text-[40px] font-bold xl:text-left text-center leading-[normal] max-w-[385px] mt-[22px] mb-[52px]">
+                            Frequently Asked Questions </h4>
+                        <img src="assets/svgs/faq.svg" class="xl:mx-0 mx-auto" alt="faq"/>
+                    </div>
+                    <div class="max-w-[725px] w-full xl:mt-0 mt-10">
+                        <ol class="relative">
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(0 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> What discounts
+                                            do you offer? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        We offer the following discounts:<br>
+                                        - Prepayment for 3 months — 3% off total<br>
+                                        - Prepayment for 6 months — 6% off total<br>
+                                        - Prepayment for 12 months — 12% off total
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(1 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> What is a VPS
+                                            and how does it work? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        A VPS, short for Virtual Private Server, is a virtualized server that offers
+                                        a dedicated
+                                        portion of resources within a larger physical server. Our VPS clusters are
+                                        running on
+                                        KVM virtualization, it operates independently and grants users complete
+                                        control over
+                                        their server environment. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(2 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> What is the
+                                            difference between a VPS and a RDP? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        Most of the time a VPS refers to a VPS running on a Linux-based operating
+                                        system, while
+                                        RDP refers to a VPS running on a Windows-based operating system with Remote
+                                        Desktop
+                                        Protocol (RDP) enabled. The choice ultimately comes down to your specific
+                                        requirements
+                                        and familiarity with the operating system. However, it's important to note
+                                        that, in the
+                                        end, it's the same product, just with a different operating system. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(3 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> What is the
+                                            difference between a VPS/RDP and a Dedicated Server? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        The main difference between a VPS/RDP and a Dedicated Server is that a VPS/RDP
+                                        shares hardware
+                                        resources with other virtual servers on the same physical machine, while a
+                                        Dedicated
+                                        Server provides exclusive access to all of the server's resources. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(4 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> Is it possible
+                                            to order a customized server with specific hardware? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        We offer the flexibility to configure customized servers according to your
+                                        specific
+                                        hardware and software requirements. Our team will help with
+                                        you to
+                                        ensure all your needs are thoroughly addressed. Feel free to reach out to us. We
+                                        can get your custom server online within 72 hours!</p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(5 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> How can I manage
+                                            my server? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        You can manage your server using our
+                                        user-friendly control panel. Additionally, if you are unable to access your
+                                        server via SSH
+                                        or RDP, you can consider using the VNC option in the control panel for
+                                        remote access to
+                                        rescue your server. The web-based control panel offers a range of features,
+                                        including OS
+                                        reinstallation, changing primary IP addresses for multiple servers and
+                                        additional server administration features like resource
+                                        monitoring,
+                                        firewall configuration, and much more. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(6 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> Can I order
+                                            multiple IPv4's or subnets? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        Yes, you can order additional IP addresses for your Cloud Server during the
+                                        standard
+                                        order
+                                        process on our website. Each additional IP is priced at 2.50 EUR. If you
+                                        require more
+                                        than 60 IP addresses, we can offer /24 subnets with 253 usable IPv4's for €200
+                                        monthly. Please contact us
+                                        through the
+                                        support ticket for further assistance. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(7 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> What payment
+                                            methods are available? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        We accept payments in Perfect Money, as well as a wide range of
+                                        cryptocurrencies: Monero
+                                        (XMR), Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), USD Coin (USDC),
+                                        Tether (USDT),
+                                        Binance USD (BUSD), Dai (DAI), Bitcoin Cash (BCH), Binance Coin (BNB), Dash
+                                        (DASH),
+                                        Dogecoin (DOGE), Polygon (MATIC), Toncoin (TON), Tron (TRX), and many other
+                                        coins. </p>
+                                </div>
+                            </li>
+                            <li class="mb-5 md:ms-4">
+                                <div class="absolute w-5 h-5 bg-[#ffffff05] rounded-full md:block hidden mt-5 -start-3 border border-[#FFFFFF05]">
+                                </div>
+                                <div class="p-5 bg-[#ffffff05] rounded-xl">
+                                    <div class="flex justify-between items-center gap-x-4" onclick="toggleCollapse(8 , this)">
+                                        <p class="md:text-base text-[13px] font-bold leading-[normal]"> Are any ports
+                                            blocked by default? For example port 25, 465 or 587? </p>
+                                        <button class="min-w-[23px] aspect-square">
+                                            <img src="assets/svgs/collapseClose.svg" class="close hidden" alt="collapseClose"/>
+                                            <img src="assets/svgs/plus.svg" class="open" alt="Plus"/>
+                                        </button>
+                                    </div>
+                                    <p class="text-[#A7A7A7] md:text-base text-[13px] font-normal leading-5 mt-6 hidden faqDisc">
+                                        Yes. We have disabled SMTP ports 25, 465 and 587 because of low quality spam.
+                                        <br>We
+                                        can not open these ports for you either.
+                                    </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+        			<div class="px-8 md:px-0">
+			    <section class="max-w-[1200px] w-full mx-auto lg:mt-[90px] mt-6 md:mb-[120px] mb-[60px] bg-[url('./assets/img/get-start-back.png')] bg-[length:100%_100%] bg-no-repeat md:px-[85px] md:py-[40px] py-6">
+			        <div class="flex justify-between items-center">
+			            <p class="md:text-[40px] text-[20px] font-bold leading-[normal] lg:w-fit w-full lg:text-left text-center">
+			                Ready to get started? </p>
+			            <a href="https://anonvm.wtf" class="lg:flex justify-between py-7 px-10 bg-white rounded-2xl">
+			                <p class="text-[#015BEF] text-2xl font-medium leading-[normal]"> Create your account </p>
+			                <div class="flex items-center ml-2">
+			                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewbox="0 0 14 2" fill="none">
+			                        <path d="M1 1H13" stroke="#015BEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			                    </svg>
+			                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" class="-ml-1" viewbox="0 0 7 14" fill="none">
+			                        <path d="M1 1L6 6.99999L1 13" stroke="#015BEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			                    </svg>
+			                </div>
+			            </a>
+			        </div>
+			    </section>
+			</div>
+			</main>
+			<footer class="bg-[#ffffff05]">
+			    <div class="container mx-auto md:flex grid grid-cols-2 justify-between flex-wrap gap-7 md:px-0 px-14 md:py-[90px] py-10">
+			        <div class="h-fit">
+			            <div>
+			                <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Bare Metal </p>
+			                <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="amd-dedicated-server">AMD Dedicated Server</a>
+			                    </li>
+			                </ul>
+			            </div>
+			            <div class="h-fit mt-7 md:hidden block">
+			                <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Windows Cloud </p>
+			                <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="windows-2022-rdp">Windows Server 2022 RDP</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="windows-2019-rdp">Windows Server 2019 RDP</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="windows-2012-rdp">Windows Server 2012 RDP</a>
+			                    </li>
+			                </ul>
+			            </div>
+			        </div>
+			        <div class="h-fit">
+			            <div>
+			                <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Linux Cloud </p>
+			                <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="kali-linux-vps">Kali Linux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="debian-vps">Debian VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="ubuntu-vps">Ubuntu VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="centos-vps">CentOS VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="almalinux-vps">AlmaLinux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="oracle-linux-vps">Oracle Linux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="rocky-linux-vps">Rocky Linux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="fedora-vps">Fedora VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="scientific-linux-vps">Scientific Linux VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="opensuse-vps">openSUSE VPS</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="webuzo-vps">Webuzo VPS</a>
+			                    </li>
+			                </ul>
+			            </div>
+			            <div class="mt-7 md:hidden block">
+			                <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Resources </p>
+			                <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#x">Server Uptime</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Contact Us</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Acceptable Use Policy</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Terms of Service</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Privacy Policy</a>
+			                    </li>
+			                    <li class="md:text-base text-[13px]">
+			                        <a href="#">Refund Policy</a>
+			                    </li>
+			                </ul>
+			            </div>
+			        </div>
+			        <div class="md:block hidden">
+			            <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Windows Cloud </p>
+			            <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                <li class="md:text-base text-[13px]">
+			                    <a href="windows-2022-rdp">Windows Server 2022 RDP</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="windows-2019-rdp">Windows Server 2019 RDP</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="windows-2012-rdp">Windows Server 2012 RDP</a>
+			                </li>
+			            </ul>
+			        </div>
+			        <div class="md:block hidden">
+			            <p class="md:text-2xl text-base font-medium leading-[21px] md:mb-6 mb-3.5"> Resources </p>
+			            <ul class="[&amp;>*]:text-[#A7A7A7] [&amp;>*]:font-normal [&amp;>*]:my-2">
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#x">Server Uptime</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Contact Us</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Acceptable Use Policy</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Terms of Service</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Privacy Policy</a>
+			                </li>
+			                <li class="md:text-base text-[13px]">
+			                    <a href="#">Refund Policy</a>
+			                </li>
+			            </ul>
+			        </div>
+			    </div>
+			    <div class="bg-[#ffffff05] py-4">
+			        <p class="text-center text-[#A7A7A7] md:text-[14.883px] text-[13px] font-normal leading-[21px] tracking-[-0.15px]">
+			            Copyright &copy; <a href="/" class="text-[white]"> CrazyRDP</a> 2019 - 2024 <br/> All
+			            rights reserved </p>
+			    </div>
+			</footer><script defer src="beacon.min.js" data-cf-beacon="{&quot;rayId&quot;:&quot;889e67a82a17585a&quot;,&quot;version&quot;:&quot;2024.4.1&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;cec06facb92c46cbab872dc935538963&quot;,&quot;b&quot;:1}" ></script>
+</body>
+</html>
